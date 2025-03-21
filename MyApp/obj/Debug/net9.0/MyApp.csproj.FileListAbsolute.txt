@@ -95,3 +95,4 @@
 /Users/sumanth/RiderProjects/MyApp/MyApp/obj/Debug/net9.0/MyApp.pdb
 /Users/sumanth/RiderProjects/MyApp/MyApp/obj/Debug/net9.0/MyApp.genruntimeconfig.cache
 /Users/sumanth/RiderProjects/MyApp/MyApp/obj/Debug/net9.0/ref/MyApp.dll
+/Users/sumanth/RiderProjects/MyApp/MyApp/obj/Debug/net9.0/MyApp.sourcelink.json

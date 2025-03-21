@@ -11,4 +11,9 @@ public class ItemsController : Controller
         var item = new Item() { Name = "keyboard" };
         return View(item);
     }
+    public IActionResult edit(int id)
+    {
+
+        return Content("id = " + id);
+    }
 }
