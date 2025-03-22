@@ -13,6 +13,7 @@ This is a simple ASP.NET Core MVC application built using .NET 9. The project de
 ---
 
 ## 📁 Project Structure
+````
 /ItemTracker
 │
 ├── Controllers
@@ -20,20 +21,22 @@ This is a simple ASP.NET Core MVC application built using .NET 9. The project de
 │
 ├── Models
 │   └── Item.cs                    # Item model definition
-│
+│   
+├── Data
+│   └── Migrations                  # EF Core Migrations
+│   └── MyAppContext.cs             # Database context
 ├── Views
 │   └── Items
 │       ├── Index.cshtml           # List of items
 │       ├── Create.cshtml          # Add new item
 │       ├── Edit.cshtml            # Edit existing item
-│       └── Details.cshtml         # View item details
+│       └── Delete.cshtml         # Delete existing item
 │
 ├── appsettings.json               # DB configuration and app settings
 ├── Program.cs                     # Entry point of the application
-└── Startup.cs                     # Configures services and middleware
 
 
----
+````
 
 ## ⚙️ Installation and Setup
 

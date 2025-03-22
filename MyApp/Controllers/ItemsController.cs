@@ -30,7 +30,7 @@ public class ItemsController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create([Bind("Id,Name, Price")] Item item)
+    public async Task<IActionResult> Create([Bind("Id, Name, Price, Quantity")] Item item)
     {
         if (ModelState.IsValid)
         {
@@ -48,7 +48,7 @@ public class ItemsController : Controller
         return View(item);
     }
     [HttpPost]
-    public async Task<IActionResult> Edit([Bind("Id,Name,Price")] Item item)
+    public async Task<IActionResult> Edit([Bind("Id,Name,Price,Quantity")] Item item)
     {
         if (ModelState.IsValid)
         {
@@ -75,8 +75,6 @@ public class ItemsController : Controller
             await _context.SaveChangesAsync();
         }
         return RedirectToAction("Index");
-
-       
     }
     
     
