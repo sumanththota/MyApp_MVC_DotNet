@@ -65,7 +65,7 @@ public class ItemsController : Controller
         var item = await _context.Items.FirstOrDefaultAsync(x => x.Id == id);
         return View(item);
     }
-    [HttpPost]
+    [HttpPost, ActionName("Delete")]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
         var item = await _context.Items.FindAsync(id);
