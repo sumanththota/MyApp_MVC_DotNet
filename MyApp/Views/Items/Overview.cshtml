@@ -1,0 +1,15 @@
+@model MyApp.Models.Item
+@{
+    
+}
+<p> This is the name of the item @Model.Name</p>
+
+@{
+    var items = new List<string> {"car", "Bike", "Truck"};
+}
+<ul>
+    @foreach (var item in items)
+    {
+        <li>@item</li>
+    }
+</ul>
