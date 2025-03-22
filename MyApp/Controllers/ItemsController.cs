@@ -24,11 +24,12 @@ public class ItemsController : Controller
         var item = await _context.Items.ToListAsync();
         return View(item);
     }
+    // GET: Items/Details/
     public IActionResult Create()
     {
         return View();
     }
-
+    //
     [HttpPost]
     public async Task<IActionResult> Create([Bind("Id, Name, Price, Quantity")] Item item)
     {
@@ -40,13 +41,14 @@ public class ItemsController : Controller
         }
         return View(item);
     }
-
+    // GET: Items/Edit/
     [HttpGet]
     public async Task<IActionResult> Edit(int id)
     {
         var item = await _context.Items.FirstOrDefaultAsync(x => x.Id == id);
         return View(item);
     }
+    // POST: Items/Edit/
     [HttpPost]
     public async Task<IActionResult> Edit([Bind("Id,Name,Price,Quantity")] Item item)
     {
@@ -58,13 +60,16 @@ public class ItemsController : Controller
         }
         return View(item);
     }
-
+    // GET: Items/Delete/
     [HttpGet]
     public async Task<IActionResult> Delete(int id)
     {
         var item = await _context.Items.FirstOrDefaultAsync(x => x.Id == id);
         return View(item);
+        
     }
+    
+    // POST: Items/Delete/
     [HttpPost, ActionName("Delete")]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
