@@ -84,3 +84,8 @@ Update-Database
 dotnet ef migrations add InitialMigration
 dotnet ef database update
 ```
+### Overview of the UI
+
+![UI](MyApp/wwwroot/index.png)
+
+![UI](MyApp/wwwroot/Delete.png)
