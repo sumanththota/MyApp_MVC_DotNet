@@ -90,4 +90,4 @@ dotnet ef database update
 
 ![UI](MyApp/wwwroot/Delete.png)
 
-![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=<sumanththota>.<ShoppingApp_DotNET_MVC>)
+![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=sumanththota.ShoppingApp_DotNET_MVC)
